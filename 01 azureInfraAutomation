@@ -15,3 +15,24 @@ Part 2- install azure CLI (Command line interface)
 
 sudo apt-get install azure-cli
 az login
+
+# RESOURCE GROUP- life cycle manager
+# all the resource- that you create together and want to delete together should be in the same RG
+
+# VM, IP, Network, Disks -> we want all these together and not individually- then place them in same RG
+# VM and database-> different RG!
+
+
+Part 3- create resources
+
+
+Syntax: az group create --name <unique_name> --location <azure_location>
+
+1.    az group create --name banana --location eastus
+
+2. az vm create \
+  --resource-group banana \
+  --name cattlestargalactica \
+  --image Debian \
+  --admin-username shantanu \
+  --generate-ssh-keys
