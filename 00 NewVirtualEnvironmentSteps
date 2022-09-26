@@ -1,0 +1,32 @@
+python3 --version
+
+sudo apt-get install python3-pip
+
+sudo apt-get install python3-venv
+
+python3 -m venv potato
+
+ls -l
+
+cd potato
+
+ls -l
+
+cd bin
+
+ls -l
+
+# Observe-> how activate file doesn't have execute permissions!
+
+chmod 700 activate
+
+ls -l 
+
+# observe-> execute permissions (rwx------) permissions applied on the activate
+
+source activate 
+
+# Observe -> (potato) before the command prompt and your username!
+# the potato environment has started!
+
+
