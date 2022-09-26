@@ -14,3 +14,4 @@ Part 2- install azure CLI (Command line interface)
 
 
 sudo apt-get install azure-cli
+az login
