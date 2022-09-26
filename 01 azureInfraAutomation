@@ -1,0 +1,16 @@
+# Azure Resource Manager
+
+# SSH into your machine before continuing with following steps
+
+Part 1- activate Virtual Environment 
+
+
+cd potato/bin
+source activate 
+cd .. 
+cd ..
+
+Part 2- install azure CLI (Command line interface)
+
+
+sudo apt-get install azure-cli
