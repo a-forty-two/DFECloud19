@@ -1,0 +1,27 @@
+#!/bin/bash
+
+rgname=$1
+loc=$2
+vmname=$3
+uname=$4
+
+echo "Creating resource group"
+echo "Creating RG" > log.txt
+
+az group create --name $rgname --location $loc
+
+echo "Resource group created successfully"
+echo "RG success" > log.txt
+
+echo "Creating Virtual Machine"
+echo "Creating VM" > log.txt
+
+az vm create \
+  --resource-group $rgname \
+  --name $vmname \
+  --image Debian \
+  --admin-username $uname \
+  --generate-ssh-keys
+
+echo "VM created successfully"
+echo "VM created successfully" > log.txt
