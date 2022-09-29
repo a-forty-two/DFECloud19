@@ -1,0 +1,20 @@
+1) Navigate to https://github.com/a-forty-two/DFECloud19/tree/main/flaskapidocker and observe 2 files- api.py and Dockerfile
+
+2) Download the files by running:
+      mkdir newapi
+      cd newapi
+      wget https://raw.githubusercontent.com/a-forty-two/DFECloud19/main/flaskapidocker/Dockerfile
+      wget https://raw.githubusercontent.com/a-forty-two/DFECloud19/main/flaskapidocker/api.py
+      
+ 3) verify you have two files by using ls command. They should be Dockerfile and api.py
+     If the names are different, please rename them using mv command
+     
+ 4) sudo docker build . --tag <YOUR_USER_NAME>/<IMAGE_NAME>:version
+ 
+ 5) sudo docker push <YOUR_USER_NAME>/<IMAGE_NAME>:version
+ 
+ 6) observe that a new image is present in your hub.docker.com
+ 
+ 7) sudo docker run -d -p 5000:5000 <YOUR_USER_NAME>/<IMAGE_NAME>:version
+ 
+ 
