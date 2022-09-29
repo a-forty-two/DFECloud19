@@ -17,4 +17,8 @@
  
  7) sudo docker run -d -p 5000:5000 <YOUR_USER_NAME>/<IMAGE_NAME>:version
  
+ 8) Navigate to Networking section on your VIRTUAL MACHINE-> and add an inbound port rule for 5001
+ 
+ 9) navigate to your VM's public IP:5001, example: 10.20.30.40:5001
+ 
  
