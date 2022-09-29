@@ -1,0 +1,33 @@
+1) Start/Create your LINUX (UBUNTU 20.04) machine
+    On the VM's left menu-> local NETWORKING
+     -> in Networking tab, on the right-> ADD INBOUND PORT RULE
+      -> leave all the things at default, only DESTINATION PORT RANGE-> set the value to 5000
+      -> Click on Add to create the rule
+    
+2) ssh username@public_ip_address
+3) if docker present-> sudo docker login
+    if docker absent-> install via following commands
+     
+      sudo apt-get update
+      sudo apt install curl -y
+      curl https://get.docker.com | sudo bash
+      sudo docker login
+
+4) sudo docker pull afortytwo/flaskworks
+5) sudo docker images 
+      this is to verify that image has been downloaded 
+      
+6) sudo docker tag afortytwo/flaskworks <YOUR_USER_NAME>/<YOUR_IMAGE_NAME>:1.0
+
+7) sudo docker push <YOUR_USER_NAME>/<YOUR_IMAGE_NAME>:1.0
+
+8) Once succeeded, navigate to hub.docker.com and sign in-> verify that your image is present there
+
+9) sudo docker pull <YOUR_USER_NAME>/<YOUR_IMAGE_NAME>
+
+10) sudo docker run -d -p 5000:5000 <YOUR_USER_NAME>/<YOUR_IMAGE_NAME>
+
+11) go to your VM's public IP address, and add :5000 in the IP. For example, if IP was 10.20.30.40, then navigate to 10.20.30.40:5000
+
+12) View our containerized website!
+
