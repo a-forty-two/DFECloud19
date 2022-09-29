@@ -9,7 +9,7 @@
  3) verify you have two files by using ls command. They should be Dockerfile and api.py
      If the names are different, please rename them using mv command
      
- 4) sudo docker build . --tag <YOUR_USER_NAME>/<IMAGE_NAME>:version
+ 4) sudo docker build . -t <YOUR_USER_NAME>/<IMAGE_NAME>:version
  
  5) sudo docker push <YOUR_USER_NAME>/<IMAGE_NAME>:version
  
