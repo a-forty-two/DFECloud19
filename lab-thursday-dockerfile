@@ -1,7 +1,7 @@
 1) Navigate to https://github.com/a-forty-two/DFECloud19/tree/main/flaskapidocker and observe 2 files- api.py and Dockerfile
 
 2) Download the files by running:
-      mkdir newapi
+      mkdir flaskapi
       cd newapi
       wget https://raw.githubusercontent.com/a-forty-two/DFECloud19/main/flaskapidocker/Dockerfile
       wget https://raw.githubusercontent.com/a-forty-two/DFECloud19/main/flaskapidocker/api.py
